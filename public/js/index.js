@@ -8,7 +8,7 @@ locationForm.addEventListener('submit', (e) => {
   const weatherDisplay = document.getElementById('weatherDisplay')
   locationDisplay.innerText = 'Loading...'
   if (!(locationValue === '' || locationValue == null)) {
-    fetch(`http://127.0.0.1:3000/weather?address=${locationValue}`).then((response) => {
+    fetch(`/weather?address=${locationValue}`).then((response) => {
       response.json().then((data) => {
         locationDisplay.innerText = `${data.location}`
         console.log(data)
