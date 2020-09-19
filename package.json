@@ -1,7 +1,7 @@
 {
   "name": "web-servers",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node src/app.js"
   },
@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "expres": "0.0.5",
     "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "hbs": "^4.1.1",
+    "postman-request": "^2.88.1-postman.25"
   },
   "description": ""
 }
