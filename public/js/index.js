@@ -1,5 +1,4 @@
 const locationForm = document.querySelector('[data-location-input-form')
-console.log('Client Side JS')
 locationForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
