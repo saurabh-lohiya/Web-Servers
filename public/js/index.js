@@ -1,12 +1,11 @@
 const locationForm = document.querySelector('[data-location-input-form')
+
 locationForm.addEventListener('submit', (e) => {
   e.preventDefault()
-
   const location = document.querySelector('[data-location-input]')
   const locationValue = location.value
   const locationDisplay = document.getElementById('locationDisplay')
   const weatherDisplay = document.getElementById('weatherDisplay')
-
   locationDisplay.innerText = 'Loading...'
   if (!(locationValue === '' || locationValue == null)) {
     fetch(`http://127.0.0.1:3000/weather?address=${locationValue}`).then((response) => {
